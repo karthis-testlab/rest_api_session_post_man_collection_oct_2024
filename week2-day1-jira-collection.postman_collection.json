@@ -27,17 +27,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://karthikeselene.atlassian.net/rest/api/3/project/search",
-					"protocol": "https",
+					"raw": "{{protocol}}{{hostName}}{{basePath}}/project/search",
 					"host": [
-						"karthikeselene",
-						"atlassian",
-						"net"
+						"{{protocol}}{{hostName}}{{basePath}}"
 					],
 					"path": [
-						"rest",
-						"api",
-						"3",
 						"project",
 						"search"
 					]
@@ -66,17 +60,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://karthikeselene.atlassian.net/rest/api/3/project/10003",
-					"protocol": "https",
+					"raw": "{{protocol}}{{hostName}}{{basePath}}/project/10003",
 					"host": [
-						"karthikeselene",
-						"atlassian",
-						"net"
+						"{{protocol}}{{hostName}}{{basePath}}"
 					],
 					"path": [
-						"rest",
-						"api",
-						"3",
 						"project",
 						"10003"
 					]
@@ -114,17 +102,11 @@
 					}
 				},
 				"url": {
-					"raw": "https://karthikeselene.atlassian.net/rest/api/3/issue",
-					"protocol": "https",
+					"raw": "{{protocol}}{{hostName}}{{basePath}}/issue",
 					"host": [
-						"karthikeselene",
-						"atlassian",
-						"net"
+						"{{protocol}}{{hostName}}{{basePath}}"
 					],
 					"path": [
-						"rest",
-						"api",
-						"3",
 						"issue"
 					]
 				}
@@ -161,17 +143,11 @@
 					}
 				},
 				"url": {
-					"raw": "https://karthikeselene.atlassian.net/rest/api/3/issue",
-					"protocol": "https",
+					"raw": "{{protocol}}{{hostName}}{{basePath}}/issue",
 					"host": [
-						"karthikeselene",
-						"atlassian",
-						"net"
+						"{{protocol}}{{hostName}}{{basePath}}"
 					],
 					"path": [
-						"rest",
-						"api",
-						"3",
 						"issue"
 					]
 				}
@@ -208,17 +184,11 @@
 					}
 				},
 				"url": {
-					"raw": "https://karthikeselene.atlassian.net/rest/api/3/issue",
-					"protocol": "https",
+					"raw": "{{protocol}}{{hostName}}{{basePath}}/issue",
 					"host": [
-						"karthikeselene",
-						"atlassian",
-						"net"
+						"{{protocol}}{{hostName}}{{basePath}}"
 					],
 					"path": [
-						"rest",
-						"api",
-						"3",
 						"issue"
 					]
 				}
@@ -246,19 +216,19 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://karthikeselene.atlassian.net/rest/api/3/issue/SB-15",
-					"protocol": "https",
+					"raw": "{{protocol}}{{hostName}}{{basePath}}/issue/:issueIdOrKey",
 					"host": [
-						"karthikeselene",
-						"atlassian",
-						"net"
+						"{{protocol}}{{hostName}}{{basePath}}"
 					],
 					"path": [
-						"rest",
-						"api",
-						"3",
 						"issue",
-						"SB-15"
+						":issueIdOrKey"
+					],
+					"variable": [
+						{
+							"key": "issueIdOrKey",
+							"value": "SB-15"
+						}
 					]
 				}
 			},
@@ -301,20 +271,20 @@
 					]
 				},
 				"url": {
-					"raw": "https://karthikeselene.atlassian.net/rest/api/3/issue/10028/attachments",
-					"protocol": "https",
+					"raw": "{{protocol}}{{hostName}}{{basePath}}/issue/:issueIdOrKey/attachments",
 					"host": [
-						"karthikeselene",
-						"atlassian",
-						"net"
+						"{{protocol}}{{hostName}}{{basePath}}"
 					],
 					"path": [
-						"rest",
-						"api",
-						"3",
 						"issue",
-						"10028",
+						":issueIdOrKey",
 						"attachments"
+					],
+					"variable": [
+						{
+							"key": "issueIdOrKey",
+							"value": "10028"
+						}
 					]
 				}
 			},

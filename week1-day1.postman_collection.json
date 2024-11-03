@@ -86,12 +86,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "vW0eDfd+A0V-",
+							"value": "{{password}}",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "admin",
+							"value": "{{username}}",
 							"type": "string"
 						}
 					]
@@ -99,12 +99,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://dev262949.service-now.com/api/now/table/:tableName/:sys_id",
-					"protocol": "https",
+					"raw": "{{protocol}}{{host_name}}/api/now/table/:tableName/:sys_id",
 					"host": [
-						"dev262949",
-						"service-now",
-						"com"
+						"{{protocol}}{{host_name}}"
 					],
 					"path": [
 						"api",
@@ -158,7 +155,7 @@
 		},
 		{
 			"key": "password",
-			"value": "vW0eDfd+A0V-",
+			"value": "",
 			"type": "string"
 		}
 	]

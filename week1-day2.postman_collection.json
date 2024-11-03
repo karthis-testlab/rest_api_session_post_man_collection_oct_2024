@@ -27,12 +27,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://dev262949.service-now.com/api/now/table/:tableName?sysparm_limit=5&sysparm_fields=number,sys_id,short_description,description,state,urgency",
-					"protocol": "https",
+					"raw": "{{protocol}}{{host_name}}/api/now/table/:tableName?sysparm_limit=5&sysparm_fields=number,sys_id,short_description,description,state,urgency",
 					"host": [
-						"dev262949",
-						"service-now",
-						"com"
+						"{{protocol}}{{host_name}}"
 					],
 					"path": [
 						"api",
@@ -144,12 +141,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "vW0eDfd+A0V-",
+							"value": "{{password}}",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "admin",
+							"value": "{{username}}",
 							"type": "string"
 						}
 					]
@@ -166,12 +163,9 @@
 					}
 				},
 				"url": {
-					"raw": "https://dev262949.service-now.com/api/now/table/:tableName",
-					"protocol": "https",
+					"raw": "{{protocol}}{{host_name}}/api/now/table/:tableName",
 					"host": [
-						"dev262949",
-						"service-now",
-						"com"
+						"{{protocol}}{{host_name}}"
 					],
 					"path": [
 						"api",
@@ -182,7 +176,7 @@
 					"variable": [
 						{
 							"key": "tableName",
-							"value": "incident"
+							"value": ""
 						}
 					]
 				}
@@ -197,12 +191,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "vW0eDfd+A0V-",
+							"value": "{{password}}",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "admin",
+							"value": "{{username}}",
 							"type": "string"
 						}
 					]
@@ -219,12 +213,9 @@
 					}
 				},
 				"url": {
-					"raw": "https://dev262949.service-now.com/api/now/table/:tableName/:sys_id",
-					"protocol": "https",
+					"raw": "{{protocol}}{{host_name}}/api/now/table/:tableName/:sys_id",
 					"host": [
-						"dev262949",
-						"service-now",
-						"com"
+						"{{protocol}}{{host_name}}"
 					],
 					"path": [
 						"api",
@@ -255,12 +246,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "vW0eDfd+A0V-",
+							"value": "{{password}}",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "admin",
+							"value": "{{username}}",
 							"type": "string"
 						}
 					]
@@ -277,12 +268,9 @@
 					}
 				},
 				"url": {
-					"raw": "https://dev262949.service-now.com/api/now/table/:tableName/:sysId",
-					"protocol": "https",
+					"raw": "{{protocol}}{{password}}/api/now/table/:tableName/:sysId",
 					"host": [
-						"dev262949",
-						"service-now",
-						"com"
+						"{{protocol}}{{password}}"
 					],
 					"path": [
 						"api",
@@ -308,6 +296,21 @@
 		{
 			"name": "Delete_A_Exisiting_Incident_Record",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{username}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "DELETE",
 				"header": [],
 				"url": {
@@ -347,12 +350,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "vW0eDfd+A0V-",
+							"value": "{{password}}",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "admin",
+							"value": "{{username}}",
 							"type": "string"
 						}
 					]
